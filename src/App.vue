@@ -27,6 +27,9 @@ export default {
 </script>
 
 <template>
+  <router-link to="/"> Home </router-link> |
+  <router-link to="/about"> About </router-link> |
+  <router-view></router-view>
   <div class="initText">  Вы конвертируете рубли в <p> {{ convCurr }} </p></div>
   <button class="currButton" 
     v-for="(i, index)  in currencies" @click="setCurrency(i)">
